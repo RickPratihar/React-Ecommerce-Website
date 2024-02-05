@@ -8,37 +8,37 @@ const desc =
 
 const clientsList = [
   {
-    imgUrl: "/src/assets/images/clients/01.jpg",
+    imgUrl: "/images/clients/01.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join from Canada",
   },
   {
-    imgUrl: "/src/assets/images/clients/02.jpg",
+    imgUrl: "/images/clients/02.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join from USA",
   },
   {
-    imgUrl: "/src/assets/images/clients/03.jpg",
+    imgUrl: "/images/clients/03.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join from West Bengal",
   },
   {
-    imgUrl: "/src/assets/images/clients/02.jpg",
+    imgUrl: "/images/clients/02.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join from Australia",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/images/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/images/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/images/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },

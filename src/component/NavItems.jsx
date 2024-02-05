@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/images/logo/logo.png";
+import logo from "/images/logo/logo.png";
 import { AuthContext } from "../contexts/AuthProvider";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";

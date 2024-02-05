@@ -119,7 +119,7 @@ const SingleBlog = () => {
                                   strategy and strategic objectives.
                                 </p>
                                 <img
-                                  src="/src/assets/images/blog/single/01.jpg"
+                                  src="/images/blog/single/01.jpg"
                                   alt=""
                                 />
                                 <p>
@@ -138,7 +138,7 @@ const SingleBlog = () => {
                                 </p>
                                 <div className="video-thumb">
                                   <img
-                                    src="/src/assets/images/blog/single/02.jpg"
+                                    src="/images/blog/single/02.jpg"
                                     alt=""
                                   />
                                   <a href="#" className="video-button popup">
