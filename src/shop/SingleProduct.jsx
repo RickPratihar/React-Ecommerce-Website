@@ -13,10 +13,6 @@ import Review from "./Review";
 import PopularPost from "./PopularPost";
 import Tags from "./Tags";
 
-// const ProductDisplay = () => import('./ProductDisplay');
-// const PopularPost = () => import('./PopularPost');
-// const Tags = () => import('./Tags');
-// const Review = () => import('./Review');
 
 const SingleProduct = () => {
   const [product, setProduct] = useState([]);
@@ -46,7 +42,7 @@ const SingleProduct = () => {
                   <div className="col-md-6 col-12">
                     <div className="product-thumb">
                       <div className="swiper-container pro-single-top">
-                        <Swiper 
+                        {/* <Swiper 
                         spaceBetween={30}
                         slidesPerView={1}
                         loop={true}
@@ -60,7 +56,8 @@ const SingleProduct = () => {
                                 prevEl:".pro-single-prev",
                                 prevE2:".pro-single-next",
                             }
-                        }
+                        } */}
+                        <div
                         className="mySwiper">
                           {
                             result.map((item, i) => (
@@ -71,16 +68,9 @@ const SingleProduct = () => {
                               </SwiperSlide>
                             ))
                           }
-                          {
-                            result.map((item, i) => (
-                              <SwiperSlide key={i}>
-                               <div className="single-thumb">
-                               <img src={item.img2} alt="" />
-                               </div>
-                              </SwiperSlide>
-                            ))
-                          }
-                        </Swiper>
+                      
+                          </div>
+                        {/* </Swiper> */}
                         <div className="pro-single-next">
                             <i className="icofont-rounded-left"></i>
                         </div>
