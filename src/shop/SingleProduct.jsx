@@ -60,8 +60,7 @@ const SingleProduct = () => {
                             result.map((item, i) => (
                               <SwiperSlide key={i}>
                                <div className="single-thumb">
-                               {/* <img src={item.img} alt="" /> */}
-                               <img src="/images/about/01.jpg" alt="" />
+                               <img src={item.img} alt="" />
                                </div>
                               </SwiperSlide>
                             ))
