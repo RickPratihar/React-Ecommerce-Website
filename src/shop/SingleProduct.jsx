@@ -13,7 +13,6 @@ import Review from "./Review";
 import PopularPost from "./PopularPost";
 import Tags from "./Tags";
 
-
 const SingleProduct = () => {
   const [product, setProduct] = useState([]);
 
@@ -42,40 +41,41 @@ const SingleProduct = () => {
                   <div className="col-md-6 col-12">
                     <div className="product-thumb">
                       <div className="swiper-container pro-single-top">
-                        {/* <Swiper 
-                        spaceBetween={30}
-                        slidesPerView={1}
-                        loop={true}
-                        autoplay={{
+                        <Swiper
+                          spaceBetween={30}
+                          slidesPerView={1}
+                          loop={true}
+                          autoplay={{
                             delay: 2000,
                             disableOnInteraction: false,
-                        }}
-                        modules={[Autoplay]}
-                        navigation= {
-                            {
-                                prevEl:".pro-single-prev",
-                                prevE2:".pro-single-next",
-                            }
-                        } */}
-                        <div
-                        className="mySwiper">
-                          {
-                            result.map((item, i) => (
-                              <SwiperSlide key={i}>
-                               <div className="single-thumb">
-                               <img src={item.img} alt="" />
-                               </div>
+                          }}
+                          modules={[Autoplay]}
+                          navigation={{
+                            prevEl: ".pro-single-prev",
+                            prevE2: ".pro-single-next",
+                          }}
+                          className="mySwiper"
+                        >
+                          {result.map((item, i) => (
+                            <div key={i}>
+                              <SwiperSlide>
+                                <div className="single-thumb">
+                                  <img src={item.img} alt="" />
+                                </div>
                               </SwiperSlide>
-                            ))
-                          }
-                      
-                          </div>
-                        {/* </Swiper> */}
+                              <SwiperSlide>
+                                <div className="single-thumb">
+                                  <img src={item.img} alt="" />
+                                </div>
+                              </SwiperSlide>
+                            </div>
+                          ))}
+                        </Swiper>
                         <div className="pro-single-next">
-                            <i className="icofont-rounded-left"></i>
+                          <i className="icofont-rounded-left"></i>
                         </div>
                         <div className="pro-single-prev">
-                            <i className="icofont-rounded-right"></i>
+                          <i className="icofont-rounded-right"></i>
                         </div>
                       </div>
                     </div>
@@ -84,26 +84,26 @@ const SingleProduct = () => {
                   {/*Details section*/}
                   <div className="col-md-6 col-12">
                     <div className="post-content">
-                        <div>
-                            {
-                                result.map(item => <ProductDisplay key={item.id} item={item}/>)
-                            }
-                        </div>
+                      <div>
+                        {result.map((item) => (
+                          <ProductDisplay key={item.id} item={item} />
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               {/*Reviews */}
               <div className="review">
-              <Review/>
+                <Review />
               </div>
             </div>
 
             {/*Right Side */}
             <div className="col-lg-4 col-12">
               <aside className="ps-lg-4">
-                <PopularPost/>
-                <Tags/>
+                <PopularPost />
+                <Tags />
               </aside>
             </div>
           </div>
