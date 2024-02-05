@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
 import PaageHeader from "../component/PaageHeader";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,6 +12,11 @@ import ProductDisplay from "./ProductDisplay";
 import Review from "./Review";
 import PopularPost from "./PopularPost";
 import Tags from "./Tags";
+
+// const ProductDisplay = () => import('./ProductDisplay');
+// const PopularPost = () => import('./PopularPost');
+// const Tags = () => import('./Tags');
+// const Review = () => import('./Review');
 
 const SingleProduct = () => {
   const [product, setProduct] = useState([]);
